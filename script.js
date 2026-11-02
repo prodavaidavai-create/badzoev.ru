@@ -127,7 +127,7 @@
       var el = document.createElement('article');
       el.className = 'case';
       el.style.setProperty('--d', i * .05 + 's');
-      var logo = c.logo ? '<img class="case__logo" src="assets/logos/' + c.logo + '" alt="' + c.name + '">' : '<span class="case__logo case__logo--text">' + c.name + '</span>';
+      var logo = c.logo ? '<img class="case__logo" src="' + c.logo + '" alt="' + c.name + '">' : '<span class="case__logo case__logo--text">' + c.name + '</span>';
       el.innerHTML = '<div class="case__top">' + logo + '<span>' + c.period + '</span></div>' +
         '<p class="case__name">' + c.name + '</p><p class="case__v">' + c.v + '</p><p class="muted small"></p>';
       $('.small', el).textContent = c.text;

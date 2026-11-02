@@ -174,10 +174,10 @@ html.is-loading { overflow: hidden; }
 .hero-side { flex: 0 0 auto; width: 0; display: flex; gap: 6px; opacity: 0; will-change: transform, width; }
 .strip { flex: 1; height: 100%; }
 .strip--1, .strip--2, .strip--3, .strip--4 { background: #0a1826 center / cover no-repeat; }
-.strip--1 { background-image: url(assets/strip-1.jpg); }
-.strip--2 { background-image: url(assets/strip-2.jpg); }
-.strip--3 { background-image: url(assets/strip-3.jpg); }
-.strip--4 { background-image: url(assets/strip-4.jpg); }
+.strip--1 { background-image: url(strip-1.jpg); }
+.strip--2 { background-image: url(strip-2.jpg); }
+.strip--3 { background-image: url(strip-3.jpg); }
+.strip--4 { background-image: url(strip-4.jpg); }
 
 .hero-over { position: absolute; inset: 0; color: #fff; font-family: 'Archivo Narrow', 'Noto Sans', system-ui, sans-serif; }
 .topbar {
