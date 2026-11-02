@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600;700&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Noto+Sans:wght@400;600;700&family=Red+Rose:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=31">
+  <link rel="stylesheet" href="styles.css?v=32">
   <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches){var d=document.documentElement;d.classList.add('motion','is-loading');setTimeout(function(){d.classList.remove('is-loading')},6000)}</script>
 </head>
 <body>
@@ -22,7 +22,16 @@
 
 <!-- Шапка-пилюля: видна всегда -->
 <header class="pill is-hero" id="pill">
-  <a class="pill__logo" href="#top">Азамат Бадзоев</a>
+  <a class="pill__logo" href="#top" aria-label="Азамат Бадзоев — на главную"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 962 90" class="brand-mark" aria-hidden="true" focusable="false">
+<g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="butt" stroke-linejoin="round">
+<path d="M4 4H106C136 4 136 43 106 43H4V82H106C138 82 138 43 106 43"/>
+<path d="M150 82L231 4H250V82"/>
+<path d="M284 4H368C425 4 425 82 368 82H284V44"/>
+<path d="M428 4H544L428 82H544"/>
+<path d="M680 63C674 76 660 82 638 82H610C553 82 553 4 610 4H638C668 4 686 25 686 49"/>
+<path d="M706 4H816M816 43H706V82H816"/>
+<path d="M836 4L891 80Q895 85 899 80L954 4"/>
+</g></svg></a>
   <nav class="pill__nav" aria-label="Основная навигация">
     <a href="#services">Услуги</a>
     <a href="#cases">Кейсы</a>
@@ -36,7 +45,16 @@
 <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Меню сайта" hidden>
   <div class="menu__top">
     <button class="menu__close" type="button" id="menuClose" aria-label="Закрыть меню"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13" stroke="currentColor" stroke-width="1.5" fill="none"/></svg><span>Закрыть</span></button>
-    <span class="pill__logo">Азамат Бадзоев</span>
+    <span class="pill__logo" role="img" aria-label="BADZOEV"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 962 90" class="brand-mark" aria-hidden="true" focusable="false">
+<g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="butt" stroke-linejoin="round">
+<path d="M4 4H106C136 4 136 43 106 43H4V82H106C138 82 138 43 106 43"/>
+<path d="M150 82L231 4H250V82"/>
+<path d="M284 4H368C425 4 425 82 368 82H284V44"/>
+<path d="M428 4H544L428 82H544"/>
+<path d="M680 63C674 76 660 82 638 82H610C553 82 553 4 610 4H638C668 4 686 25 686 49"/>
+<path d="M706 4H816M816 43H706V82H816"/>
+<path d="M836 4L891 80Q895 85 899 80L954 4"/>
+</g></svg></span>
   </div>
   <div class="menu__body">
     <nav class="menu__main">
@@ -408,7 +426,16 @@
 
   <!-- 11. CTA: большое слово за картинкой, как первый экран Mono -->
   <section class="final" id="contact">
-    <p class="final__word" data-letters-view aria-hidden="true">БАДЗОЕВ</p>
+    <p class="final__word" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 962 90" class="brand-mark" aria-hidden="true" focusable="false">
+<g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="butt" stroke-linejoin="round">
+<path d="M4 4H106C136 4 136 43 106 43H4V82H106C138 82 138 43 106 43"/>
+<path d="M150 82L231 4H250V82"/>
+<path d="M284 4H368C425 4 425 82 368 82H284V44"/>
+<path d="M428 4H544L428 82H544"/>
+<path d="M680 63C674 76 660 82 638 82H610C553 82 553 4 610 4H638C668 4 686 25 686 49"/>
+<path d="M706 4H816M816 43H706V82H816"/>
+<path d="M836 4L891 80Q895 85 899 80L954 4"/>
+</g></svg></p>
     <div class="final__card" id="finalCard">
       <img src="final-3.jpg" alt="" loading="lazy">
       <div class="final__copy">
