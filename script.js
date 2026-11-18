@@ -618,3 +618,20 @@
   window.addEventListener('resize', onScroll);
   render();
 })();
+
+// Яндекс Директ: готовый текст в Telegram по utm_campaign, чтобы видеть источник заявки
+(function () {
+  var c = new URLSearchParams(location.search).get('utm_campaign');
+  var text = {
+    audit_sales: 'Здравствуйте! Хочу бесплатный разбор отдела продаж. Код: ya-sales',
+    audit_site: 'Здравствуйте! Хочу бесплатный аудит сайта. Код: ya-site. Мой сайт: '
+  }[c];
+  if (!text) return;
+  document.querySelectorAll('a[href^="https://t.me/azamat_badzoev"]').forEach(function (a) {
+    a.href = 'https://t.me/azamat_badzoev?text=' + encodeURIComponent(text);
+  });
+  if (c === 'audit_site') {
+    var b = document.querySelector('[data-filter="sites"]');
+    if (b) b.click();
+  }
+})();
