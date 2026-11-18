@@ -627,9 +627,10 @@
     audit_site: 'Здравствуйте! Хочу бесплатный аудит сайта. Код: ya-site. Мой сайт: '
   }[c];
   if (!text) return;
-  document.querySelectorAll('a[href^="https://t.me/azamat_badzoev"]').forEach(function (a) {
-    a.href = 'https://t.me/azamat_badzoev?text=' + encodeURIComponent(text);
-  });
+  var url = 'https://t.me/azamat_badzoev?text=' + encodeURIComponent(text);
+  var fix = function (a) { if (a && /^https:\/\/t\.me\/azamat_badzoev\/?$/.test(a.getAttribute('href') || '')) a.href = url; };
+  document.querySelectorAll('a[href^="https://t.me/azamat_badzoev"]').forEach(fix);
+  document.addEventListener('click', function (e) { fix(e.target.closest && e.target.closest('a')); }, true);
   if (c === 'audit_site') {
     var b = document.querySelector('[data-filter="sites"]');
     if (b) b.click();
